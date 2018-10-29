@@ -1,0 +1,3 @@
+
+
+iOb = strOb; // Wrong!
