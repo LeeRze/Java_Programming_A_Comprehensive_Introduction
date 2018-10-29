@@ -1,2 +1,5 @@
 # Java_Programming_A_Comprehensive_Introduction
-Self-learning materials for Java Programming
+
+Self-learning summary for <<Java Programming: A Comprehensive Introduction>>
+
+Last Updated: April 2018
