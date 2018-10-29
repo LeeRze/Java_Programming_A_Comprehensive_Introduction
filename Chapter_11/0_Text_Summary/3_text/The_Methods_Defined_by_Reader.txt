@@ -1,0 +1,29 @@
+
+Table: The Methods Defined by Reader
+
+Method,  Description
+
+abstract void close(),  Closes the input source. Further read attempts will generate an IOException.
+
+void mark(int numChars),  Places a mark at the current point in the input stream that will remain valid until numChars characters are read.
+
+boolean markSupported(),  Returns true if mark()/reset() are supported on this stream.
+
+int read(),  Returns an integer representation of the next available character from the invoking input stream. If the end of the stream is encountered, -1 is returned.
+
+int read(char[] buffer), Attempts to read up to buffer.length characters into buffer and returns the catual number of characaters that were successfully read.
+                         If the end of the stream is encountered when first attempting to read, -1 is returned.
+
+abstract int read(char[] buffer, int offset, int numChars),
+                         Attempts to read up to numChars characters into buffer starting at buffer[offset], returning the number of characters successfully read.
+                         If the end of the stream is encountered when first attempting to read, -1 is returned.
+
+int read(CHarBuffer buffer),
+                         Attempts to fill the buffer specified by buffer, returning the number of characters successfully read. If the end of the stream is encountered
+                         when first attempting to read, -1 is returned. CharBuffer is a class that encapsulates a sequence of characters, such as a string.
+
+boolean ready(),  Returns true if the next input request will not wait. Otherwise, it returns false.
+
+void reset(),  Resets the input pointer to the previously set mark.
+
+long skip(long numChars),  Ignores(that is, skips) numChars characters of input, returning the number of characters actually ignored.

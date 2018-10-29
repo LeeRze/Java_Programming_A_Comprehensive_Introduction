@@ -1,0 +1,43 @@
+
+Table: A Sampling of Output Methods Defined by DataOutputStream
+
+Output_Method, Purpose
+
+void writeBoolean(boolean val), Writes the boolean specified by val.
+
+void writeByte(int val), Writes the low-order byte specified by val.
+
+void writeChar(int val), Writes the value specified by val as a char.
+
+void writeDouble(double val), Writes the double specified by val.
+
+void writeFloat(float val), Writes the float specified by val.
+
+void writeInt(int val), Writes the int specified by val.
+
+void writeLong(long val), Writes the long specified by val.
+
+void writeShort(int val), Writes the value specified by val as a short.
+
+
+
+
+Table: A Sampling of Input Methods Defined by DataInputStream
+
+Input_Method, Purpose
+
+boolean readBoolean(), Reads a boolean.
+
+byte readByte(), Reads a byte.
+
+char readChar(), Reads a char.
+
+double readDouble(), Reads a double.
+
+float readFloat(), Reads a float.
+
+int readInt(), Reads an int.
+
+long readLong(), Reads a long.
+
+short readShort(), Reads a short.

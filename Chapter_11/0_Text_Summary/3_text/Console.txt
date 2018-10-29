@@ -1,0 +1,5 @@
+
+
+readPassword()
+
+which could be used to obtain a password., without echoing what is typed.

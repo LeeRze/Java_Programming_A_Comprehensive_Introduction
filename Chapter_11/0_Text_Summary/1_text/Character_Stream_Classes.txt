@@ -1,0 +1,46 @@
+Character streams are defined by using two class hierarchies topped by these two abstract classes:
+
+Reader and Writer
+
+Reader is used for input
+Writer is used for output
+
+Concrete classes derived from Reader and Writer operate on Unicode character streams
+
+In general, the character-based classes parallel the byte-based classes.
+
+Table:
+
+Character_Stream_Class, Meaning
+
+BufferedReader, Buffered input character stream
+BufferedWriter, Buffered output character stream
+
+CharArrayReader, Input stream that reads from a character array
+CharArrayWriter, Output stream that writes to a character array
+
+FileReader, Input stream that read from a file
+FileWriter, Output stream that writes to a file
+
+FilterReader, Filtered reader
+FilterWriter, Filtered writer
+
+InputStreamReader, Input stream that translates bytes to characters
+
+LineNumberReader, Input stream that counts lines
+
+OutputStreamWriter, Output stream that translates characters to bytes
+
+PipedReader, Input pipe
+PipedWriter, Output pipe
+
+PrintWriter, Output stream that contains print() and println()
+
+PushbackReader, Input stream that allows characters to be returned to the input stream
+
+Reader, Abstract class that describes character stream input
+
+StringReader, Input stream that reads from a string
+StringWriter, Output stream that writes to a string
+
+Writer, Abstract class that describes character stream output

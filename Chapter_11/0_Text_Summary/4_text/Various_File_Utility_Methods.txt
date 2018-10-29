@@ -1,0 +1,41 @@
+
+
+JDK 7 adds a new method to File called toPath(), which is shown here:
+  Path toPath()
+
+toPath returns a Path object that represents the file encapsulated by the invoking File object.
+(In other words, toPath() converts a File into a Path) (toPath forms a bridge between the File class and the new Path interface)
+
+Table: A Sampling of Utility Methods Provided by File.
+
+Method,  Description
+
+boolean delete(),  Deletes the file specified by the invoking object. Returns true if the file was deleted and false if the file cannot be removed
+
+void deleteOnExit(),  Removes the file associated with the invoking object when the Java Virtual Machine terminates.
+
+long getFreeSpace(),  Returns the number of free bytes of storage available on the partition associated with invoking object.
+
+long getTotalSpace(),  Returns the storage capacity of the partition asscociated with the invoking object.
+
+long getUsableSpace(),  Returns the number of usable free bytes of storage available on the partition associated with the invoking object.
+
+long lastModified(),  Obtains the time stamp on the invoking file. The value returned is the number of milliseconds from January 1, 1970,
+                      Coordinated Universal Time(UTC). If no time stamp is available, zero is returned.
+
+boolean mkdir(),  Creates the directory specified by the invoking object. Return true if the directory was created and false if the directory
+                  could not be created. Failure can occur for various reasons, such as the path specified in the File object already exists, or
+                  the directory cannot be created because the entire path does not exist yet.
+
+boolean mkdirs(),  Creates the directory and all required parent directories specified by the invoking object. Return true if the entire path
+                   was created and false otherwise.
+
+boolean renameTo(File newName),  Renames the file specified by the invoking object to newName. Returns true if successful and false if the file
+                                 cannot be renamed.
+
+boolean setLastModified(long millisec),  Sets the time stamp on the invoking file to that specified by millisec, which is milliseconds from UTC.
+
+boolean setReadOnly(),  Sets the file to read-only.
+
+boolean setWritable(boolean how),  If how is true, the file is set to writable. If how is false, the file is set to read-only.
+                                   Returns true if the status of the file was modified and false if the write status cannot be changed.

@@ -1,0 +1,60 @@
+All java programs import the java.lang package.
+
+The package defines a class called System, which encapsulates several aspects of the run-time enviroment.
+
+Among other things, it contains three predefined stream variables, called in, out and err.(public, final and static with System)
+
+This means that they can be used by any other part of your program and without reference to a specific object.
+
+System.out refers to the standard output stream; By default, this is the console.
+System.in refers to the standard input, which is by default the keyboard.
+System.err refers to the standard error stream, which is also the console by default.
+However, these streams can be redirected to any compatible I/O device.
+
+System.in is an object of type InputStream;
+System.out and System.err are objects of type PrintStream.
+
+These are byte streams, even though they are typically used to read and write characters from and to the console.
+
+Q/A:
+
+Q: What is a stream?
+A: A stream is an abstraction that either produces or consumes information.
+
+Q: What are the built-in streams?
+A: System.in, System.out and System.err. 
+
+
+Table: The methods defined by InputStream
+
+Method, Description
+
+int available(),  Returns the number of bytes of input currently available for reading.
+void close(),  Closes the input source. Further read attempts will generate an IOException.
+
+void mark(int numBytes),  Places a mark at the current point in the input stream that will remain valid until numBytes bytes are read.
+boolean markSupported(),  Returns true if mark()/reset() are supported by the invoking stream.
+
+int read(), Returns an integer representation of the next available byte of input. If the end of the stream is encountered, -1 is returned.
+int read(byte[] buffer), Attempts to read up to buffer.length bytes into buffer and returns the actual number of bytes that were successfully
+                         read. If the end of the stream is encountered when first attempting toread, -1 is returned.
+int read(byte[] buffer, int offset, int numBytes),
+                         Attemps to read up to numBytes bytes into buffer starting at buffer[offset], returning the number of bytes successfully
+                         read. If the end of the stream is encountered when first attempting to read, -1 is returned.
+
+void reset(), Resets the input pointer to the previously set mark.
+long skip(long numBytes), Ignores (that is, skips) numBytes bytes of input, returning the number of bytes actually ignored.
+
+
+Table: The methods defined by OutputStream
+
+Method, Description
+
+void close(), Closes the output stream. Further write attempts will generate an IOException.
+
+void flush(), Causes any output that has been buffered to be sent to its destination. That is, it flushes the output buffer.
+
+void write(int b), Writes a single byte to an output stream. Note that the parameter is an int, which allows you to call write()
+                   with expressions without having to casst them back to byte.
+void write(byte[] buffer), Writes a complete array of bytes to an output stream.
+void write(byte[] buffer, int offset, int numBytes), Writes a subrange of numBytes bytes from the array buffer, beginning at buffer[offset].

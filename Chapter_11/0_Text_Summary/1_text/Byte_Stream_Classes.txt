@@ -1,0 +1,43 @@
+Byte streams are defined by using two class hierarchies.
+At the top of these are two abstract classes:
+
+InputStream and OutputStream
+
+Inputstream defines the characteristics common to byte input streams
+Outputstream describes the behavior of byte output streams.
+
+
+Table:
+
+Byte_Stream_Class, Meaning
+
+BufferedInputStream, Buffered input stream
+BufferedOutputStream, Buffered output stream
+
+ByteArrayInputStream, Input stream that reads from a byte array
+ByteArrayOutputStream, Output stream that writes to a byte array
+
+DataInputStream, An input stream that contains methods for reading the primitive data types
+DataOutputStream, An output stream that contains methods for writing the primitive data types
+
+FileInputStream, Input stream that reads from a file
+FileOutputStream, Output stream that writes to a file
+
+FilterInputStream, Filtered InputStream
+FilterOutputStream, Filtered OutputStream
+
+InputStream, Abstract class that describes stream input
+
+ObjectInputStream, Input stream for objects
+ObjectOutputStream, Output stream for objects
+
+OutputStream, Abstract class that describes stream output
+
+PipedInputStream, Input pipe
+PipedOutputStream, Output pipe
+
+PrintStream, Output stream that contains print() and println()
+
+PushbackInputStream, Input stream that allows bytes to be returned to the stream
+
+SequenceInputStream, Input stream that is a combination of two or more input streams that will be read sequentially, one after the other

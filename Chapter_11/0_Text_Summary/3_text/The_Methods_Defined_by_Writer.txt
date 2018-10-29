@@ -1,0 +1,33 @@
+
+
+Table: The Methods Defined by Writer
+
+Method, Description
+
+Writer append(char ch),  Appends ch to the end of the invoking output stream. Returns a reference to the invoking stream.
+
+Writer append(CharSequence chars),  
+                      Appends chars to the end of the invoking output stream. Returns a reference to the invoking stream.
+                      CharSequence is an interface that defines read-only operations on a sequence of characters.
+
+Writer append(CharSequence chars, int begin, int end),
+                      Appends the sequence of chars starting at begin and stopping with end to the end of the invoking output
+                      stream. Returns a reference to the invoking stream. CharSequence is an interface that defines read-only
+                      operations on a sequence of characters.
+
+abstract void close(),  Closes the output stream. Further write attempts will generate an IOException.
+
+abstarct void flush(),  Causes any output that has been buffered to be sent to its destination. That is, it flushes the output buffer.
+
+void write(int ch),  Writes a single character to the invoking output stream. Note that the parameter is an int, which
+                     allows you to call write() with expressions without having to cast them back to char.
+
+void write(char[] buffer),  Writes a complete array of characters to the invoking output stream.
+
+abstarct void write(char[] buffer, int offset, int numChars),
+                        Writes a subrange of numChars characters from the array buffer, beginning at buffer[offset] to the invoking output stream.
+
+void write(String str),  Writes str to the invoking output stream.
+
+void write(String str, int offset, int numChars), 
+                         Writes a subrange of numChars characters from the array str, beginning at the specified offset.
